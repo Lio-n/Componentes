@@ -2,11 +2,9 @@
   box-sizing: border-box;
   margin: 0;
 }
-body {
-  font-family: "Poppins", sans-serif;
-}
 
 .contact {
+  font-family: "Poppins", sans-serif;
   background-color: #000;
   color: #fff;
   text-align: center;
@@ -16,9 +14,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 425px) {
+  .contact {
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .contact {
+    height: 90vh;
+  }
+}
 
 .contact__container {
-  width: 344px;
+  min-width: 21.5rem;
 }
 @media (min-width: 768px) {
   .contact__container {
